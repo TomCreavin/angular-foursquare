@@ -17,10 +17,10 @@
 <div data-ng-show="totalRecordsCount == 0">
 	   <strong>No Places found Near by ({{nearby}})</strong>
 </div>
-
+<br/>
 <div data-ng-show="totalRecordsCount > 0">
 	<div class="panel panel-default">
-	  <div class="panel-heading">Showing the {{totalRecordsCount}} most popular results for {{nearby}} {{query}}</div>
+	  <div class="panel-heading">Showing top 10 results of the {{totalRecordsCount}} most popular results for {{nearby}} {{query}}</div>
 	  <div class="panel-body">
 	  	<ul class="list-group" data-ng-repeat="item in places">
 				<li class="list-group-item">{{item.venue.name}}<br/>

@@ -21,6 +21,8 @@ it easier to serve the files by a webserver.*
 npm start
 ```
 
+URL: http://localhost:8000/app/index.html
+
 ## Testing
 
 There are two kinds of tests in the angular-seed application: Unit tests and End to End tests.
