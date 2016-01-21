@@ -5,7 +5,8 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.foursquare',
   'myApp.view2',
-  'myApp.version'
+  'myApp.version',
+  'fourSquareService'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/foursquare'});
