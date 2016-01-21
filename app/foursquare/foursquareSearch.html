@@ -13,3 +13,13 @@
                 <button class="btn btn-default" data-ng-click="search()">Search</button>
 		</div>
 </form>
+
+<div data-ng-show="totalRecordsCount == 0">
+	   <strong>No Places found Near by ({{exploreNearby}})</strong>
+</div>
+
+<div data-ng-show="totalRecordsCount > 0">
+	  <ul class="list-group" data-ng-repeat="item in places">
+		<li class="list-group-item">{{item.venue.name}}<br/>{{item.venue.categories[0].shortName}}<br/>{{item.venue.location.address}}<br/>{{item.venue.location.postalCode}}</li>
+	  </ul>
+</div>
